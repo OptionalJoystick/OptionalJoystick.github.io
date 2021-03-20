@@ -203,6 +203,10 @@ Error message and password prompt
 
 <li>$:/config/Navigation/openLinkFromInsideRiver</li>
 
+<li>$:/config/Navigation/UpdateAddressBar</li>
+
+<li>$:/config/Navigation/UpdateHistory</li>
+
 <li>$:/config/NewJournal/Title</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/_sq/Stories/Templates/StoryTogglePageControl</li>
@@ -349,6 +353,8 @@ Error message and password prompt
 
 <li>$:/state/strollhometabs-338615865</li>
 
+<li>$:/state/tab--1293639432</li>
+
 <li>$:/state/tab--1498284803</li>
 
 <li>$:/state/tab-1749438307</li>
@@ -437,7 +443,7 @@ Error message and password prompt
 <div bag="default" created="20170616192701335" modified="20200510030446009" revision="0" title="$:/_sq/Stories/config/twostorybreakpoint" type="text/vnd.tiddlywiki">
 <pre>1100px</pre>
 </div>
-<div bag="default" created="20200425131030296" current-tiddler="Index" modified="20210320160516077" revision="0" title="$:/_sq/Stories/Story2HistoryList" type="application/json">
+<div bag="default" created="20200425131030296" current-tiddler="$:/ControlPanel" modified="20210320161048800" revision="0" title="$:/_sq/Stories/Story2HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;$:/config/Tiddlers/TitleLinks&quot;,
@@ -1086,10 +1092,21 @@ Error message and password prompt
             &quot;bottom&quot;: 100,
             &quot;height&quot;: 39
         }
+    },
+    {
+        &quot;title&quot;: &quot;$:/ControlPanel&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 683.0625,
+            &quot;left&quot;: 1628.84375,
+            &quot;width&quot;: 115.46875,
+            &quot;right&quot;: 1744.3125,
+            &quot;bottom&quot;: 705.5625,
+            &quot;height&quot;: 22.5
+        }
     }
 ]</pre>
 </div>
-<div bag="default" created="20170615140314952" list="" modified="20210320160516077" revision="8" tags="$:/giffmex/stroll" title="$:/_sq/Stories/Story2StoryList" type="text/vnd.tiddlywiki">
+<div bag="default" created="20170615140314952" list="$:/ControlPanel" modified="20210320160516077" revision="8" tags="$:/giffmex/stroll" title="$:/_sq/Stories/Story2StoryList" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
 <div created="20191010123116672" modified="20200714164402812" tags="$:/tags/Stylesheet $:/giffmex/stroll $:/giffmex/blinks" title="$:/.giffmex/.Stylesheet4Stroll" type="text/css">
@@ -1560,6 +1577,12 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 </div>
 <div created="20200418141615149" modified="20200521145817395" tags="$:/giffmex/stroll" title="$:/config/Navigation/openLinkFromInsideRiver">
 <pre>top</pre>
+</div>
+<div created="20210320161136411" modified="20210320161138237" title="$:/config/Navigation/UpdateAddressBar">
+<pre>permaview</pre>
+</div>
+<div created="20210320161143950" modified="20210320161143950" title="$:/config/Navigation/UpdateHistory">
+<pre>yes</pre>
 </div>
 <div bag="default" created="20191225174624729" modified="20200521145811587" revision="0" tags="$:/giffmex/stroll" title="$:/config/NewJournal/Title" type="text/vnd.tiddlywiki">
 <pre>YYYY / 0MM / 0DD / 0hh:0mm:0ss /</pre>
@@ -13800,11 +13823,14 @@ There are 2 fields, which are used by [[$:/plugins/wikilabs/link-to-tabs/styles]
 <div created="20201231113345823" modified="20210320030746544" title="$:/state/strollhometabs-338615865">
 <pre>A stroll through Stroll</pre>
 </div>
+<div created="20210320161016768" modified="20210320161032104" title="$:/state/tab--1293639432">
+<pre>$:/core/ui/TiddlerInfo/Tools</pre>
+</div>
 <div created="20201231122143358" modified="20210113153512673" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
-<div created="20210317034124548" modified="20210317045733275" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20210317034124548" modified="20210320161102634" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20210317034126281" modified="20210317045727730" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -13812,8 +13838,8 @@ There are 2 fields, which are used by [[$:/plugins/wikilabs/link-to-tabs/styles]
 <div created="20201231113427134" modified="20210320160543983" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Explorer</pre>
 </div>
-<div created="20201231112634557" modified="20210320160946401" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20201231112634557" modified="20210320161046679" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div created="20210320025055679" modified="20210320025057967" title="$:/state/tab/strolltabs-766321569">
 <pre>Hint for Muffin tutorial</pre>
@@ -13833,7 +13859,7 @@ There are 2 fields, which are used by [[$:/plugins/wikilabs/link-to-tabs/styles]
 <div bag="default" revision="1" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div created="20210320160947587" list="Index" modified="20210320160947587" title="$:/StoryList">
+<div created="20210320160947587" list="1 Index" modified="20210320160959590" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200519141000553" list="$:/.giffmex/Buttons/more-tiddler-edit-actions $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200521145647980" tags="$:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/tags/EditToolbar">
